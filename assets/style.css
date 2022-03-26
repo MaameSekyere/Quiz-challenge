@@ -3,3 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Information about quiz */
+.info-box {
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 25px;
+}
+.info-heading span {
+  text-decoration: underline;
+  font-size: 30px;
+  color: red;
+}
+.info-heading {
+  margin-top: 30px;
+}
+
+.info {
+  line-height: 2;
+  padding-top: 0;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.quiz-buttons {
+  margin-top: 10px;
+  text-align: end;
+  padding: 20px;
+}
+
+/* Quiz box */
+
+.quiz-box {
+  border: 1px black solid;
+  width: 600px;
+  padding: 0 30px;
+}
+
+.quiz-box header {
+  position: relative;
+  z-index: 2;
+  height: 100px;
+  padding: 0 30px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-left {
+  text-align: right;
+  vertical-align: top;
+}
+
+.quiz-title {
+  padding-top: 30px;
+}
+
+section {
+  padding: 25px 30px 20px 30px;
+}
+section .main-question {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+section .option-list {
+  border: 1px solid #84c5fe;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 17px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
