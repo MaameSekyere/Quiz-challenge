@@ -38,8 +38,10 @@
           </div>
         </div>
         <div class="quiz-buttons">
-          <div class="end btn btn-warning">Exit Quiz</div>
-          <div class="start-button btn btn-primary">Start</div>
+          <div class="end btn btn-warning" id="exit-button">Exit Quiz</div>
+          <div class="start-button btn btn-primary" id="start-button">
+            Start
+          </div>
         </div>
       </div>
       <!--Quiz Box header-->
@@ -66,21 +68,22 @@
           <!--The total number of questions will be inserted with javascript-->
         </div>
         <div>
-          <div class="next-button btn btn-success">Next Question</div>
+          <div class="next-button btn btn-success" id="next-button">
+            Next Question
+          </div>
         </div>
       </footer>
       <!--Quiz Results-->
-      <div class="result-box">
-        <div class="icon">
-          <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete-quiz">You've completed the Quiz!</div>
+      <div class="result-box" id="result-box">
+        <div class="complete-quiz">🏆 You've completed the Quiz!!!</div>
         <div class="score-quiz">
           <!-- Score will be inserted from JavaScript -->
         </div>
         <div class="buttons">
-          <div class="restart btn btn-success">Restart Quiz</div>
-          <div class="quit btn btn-danger">Quit Quiz</div>
+          <div class="restart btn btn-success" id="restart-button">
+            Restart Quiz
+          </div>
+          <div class="quit btn btn-danger" id=" quit-button">Quit Quiz</div>
         </div>
       </div>
     </div>
