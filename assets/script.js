@@ -62,15 +62,19 @@ var restartButtonEl = document.querySelector("#restart-button");
 var quitButtonEl = document.querySelector("#quit-button");
 var quizBoxEl = document.querySelector("#quiz-box");
 var optionListEl = document.querySelector("#option-list");
-var options = document.createElement("p");
+//var options = document.createElement("p");
 var informationBox = document.querySelector(".Information-Box");
 var resultBox = document.querySelector(".result-box");
 var highscoreEl = document.querySelector(".setHighscore");
+
+var mainQuestion = document.querySelector("#main-question");
+mainQuestion.innerHTML = "";
 var timer;
 var time = 60;
 var setTime = document.querySelector("#timer");
 
 setTime.textContent = "Time Left: " + time;
+
 function startQuiz() {
   // Loop through questions
   informationBox.style.display = "none";
@@ -78,8 +82,8 @@ function startQuiz() {
   highscoreEl.style.display = "none";
 
   timer = setInterval(tickDown, 1000);
-  getQuestions();
 }
+
 function tickDown() {
   time--;
   setTime.textContent = "Time Left: " + time;
@@ -110,10 +114,13 @@ function getQuestions() {
     // Penalized the time
     // when the loop ends or when the time runs out endQuiz
     console.log(questions[i].answer);
+
     //   if (this.value !== questions[i].answer) {
     // time -=10
     if (this.value !== questions[0].answer) {
-      return wrong;
+      console.log("wrong");
+
+      getQuestions();
     }
   }
 }
