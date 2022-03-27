@@ -16,25 +16,27 @@
   <body>
     <div class="container">
       <!--Information Box-->
-      <div class="info-box">
-        <div class="info-heading">
-          <span> Rules to the Quiz </span>
-        </div>
-        <div class="information-list">
-          <div class="info">
-            1. You will have only <span>30 seconds</span> per each question.
+      <div class="Information-Box">
+        <div class="info-box">
+          <div class="info-heading">
+            <span> Rules to the Quiz </span>
           </div>
-          <div class="info">
-            2. Once you select your answer, it can't be changed.
-          </div>
-          <div class="info">
-            3. You can't select any option once you run out of time.
-          </div>
-          <div class="info">
-            4. You can't exit from the Quiz while you're playing.
-          </div>
-          <div class="info">
-            5. You'll receive a final score at the end of your quiz.
+          <div class="information-list">
+            <div class="info">
+              1. You will have only <span>30 seconds</span> per each question.
+            </div>
+            <div class="info">
+              2. Once you select your answer, it can't be changed.
+            </div>
+            <div class="info">
+              3. You can't select any option once you run out of time.
+            </div>
+            <div class="info">
+              4. You can't exit from the Quiz while you're playing.
+            </div>
+            <div class="info">
+              5. You'll receive a final score at the end of your quiz.
+            </div>
           </div>
         </div>
         <div class="quiz-buttons">
@@ -49,13 +51,13 @@
         <header>
           <div class="quiz-title">Code Quiz</div>
           <div class="time-left">
-            <h1>Time Left- 00:30</h1>
+            <h1 id="timer"></h1>
           </div>
         </header>
       </div>
       <!--Section of Code Quiz-->
       <section>
-        <div class="main question">
+        <div class="main-question">
           <!--Question will be inserted with javascript-->
         </div>
         <div class="option-list">
@@ -75,7 +77,7 @@
       </footer>
       <!--Quiz Results-->
       <div class="result-box" id="result-box">
-        <div class="complete-quiz">🏆 You've completed the Quiz!!!</div>
+        <div class="complete-quiz">You've completed the Quiz!</div>
         <div class="score-quiz">
           <!-- Score will be inserted from JavaScript -->
         </div>
@@ -85,6 +87,10 @@
           </div>
           <div class="quit btn btn-danger" id=" quit-button">Quit Quiz</div>
         </div>
+      </div>
+      <div class="setHighscore">
+        <input type="text" />
+        <button>Submit</button>
       </div>
     </div>
     <script src="./assets/script.js"></script>
