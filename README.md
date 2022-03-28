@@ -19,3 +19,5 @@ There is a result button at the end of the quiz that records user scores after i
 ## Links
 
 https://maamesekyere.github.io/Quiz-challenge/
+
+<img width="523" alt="Screen Shot 2022-03-28 at 1 57 05 AM" src="https://user-images.githubusercontent.com/94888460/160337159-1ffe7493-974d-4901-bc40-2f93f5259d34.png">
