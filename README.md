@@ -18,3 +18,5 @@ There is a result button at the end of the quiz that records user scores after i
 
 ## Links
 https://maamesekyere.github.io/Quiz-challenge/
+
+
