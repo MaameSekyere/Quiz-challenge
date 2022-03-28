@@ -31,8 +31,15 @@
   padding: 20px;
 }
 
-/* Quiz box */
+#quiz {
+  font-size: 30px;
+  color: red;
+  text-decoration: underline;
+  height: 200px;
+}
 
+/* Quiz box */
+/*
 .quiz-box {
   border: 1px black solid;
   padding: 30px;

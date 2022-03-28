@@ -1,59 +1,45 @@
 // creating an array and passing the number, questions, options, and answers
 
-let questions = [
+let myQuestions = [
   {
     question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
-    options: [
+    CorrectAnswer: "Hyper Text Markup Language",
+    answers: [
       "Hyper Text Preprocessor",
       "Hyper Text Markup Language",
       "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language",
     ],
   },
   {
     question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
+    correctAnswer: "Cascading Style Sheet",
+    answers: [
       "Common Style Sheet",
       "Colorful Style Sheet",
-      "Computer Style Sheet",
       "Cascading Style Sheet",
     ],
   },
   {
     question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
+    correctAnswer: "Hypertext Preprocessor",
+    answers: [
       "Hypertext Preprocessor",
-      "Hypertext Programming",
       "Hypertext Preprogramming",
       "Hometext Preprocessor",
     ],
   },
   {
     question: "What does DOM stand for?",
-    answer: "Document Object Model",
-    options: [
+    correctAnswer: "Document Object Model",
+    answers: [
       "Dominance Option Language",
       "Document Object Model",
-      "Drama Object Memory",
       "Document Obedience Modem",
-    ],
-  },
-  {
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language",
     ],
   },
 ];
 
-console.log(questions);
+console.log(myQuestions);
 
 //Selecting all elements
 var startButtonEl = document.getElementById("start-button");
@@ -66,9 +52,10 @@ var optionListEl = document.querySelector("#option-list");
 var informationBox = document.querySelector(".Information-Box");
 var resultBox = document.querySelector(".result-box");
 var highscoreEl = document.querySelector(".setHighscore");
-
 var mainQuestion = document.querySelector("#main-question");
+var nextButton = document.querySelector("#next-button");
 mainQuestion.innerHTML = "";
+
 var timer;
 var time = 60;
 var setTime = document.querySelector("#timer");
@@ -118,10 +105,8 @@ function getQuestions() {
     //   if (this.value !== questions[i].answer) {
     // time -=10
     if (this.value !== questions[0].answer) {
-      console.log("wrong");
-
-      getQuestions();
-    }
+      time -= 10;
+    } else getQuestions();
   }
 }
 
