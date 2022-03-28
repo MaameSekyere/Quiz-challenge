@@ -1,41 +1,41 @@
 // creating an array and passing the number, questions, options, and answers
 
-let myQuestions = [
+var myQuestions = [
   {
-    question: "What does HTML stand for?",
-    CorrectAnswer: "Hyper Text Markup Language",
-    answers: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-    ],
+    question: "What is 10/2?",
+    answers: {
+      a: "3",
+      b: "5",
+      c: "115",
+    },
+    correctAnswer: "b",
   },
   {
-    question: "What does CSS stand for?",
-    correctAnswer: "Cascading Style Sheet",
-    answers: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Cascading Style Sheet",
-    ],
+    question: "What is 30/3?",
+    answers: {
+      a: "3",
+      b: "5",
+      c: "10",
+    },
+    correctAnswer: "c",
   },
   {
-    question: "What does PHP stand for?",
-    correctAnswer: "Hypertext Preprocessor",
-    answers: [
-      "Hypertext Preprocessor",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor",
-    ],
+    question: "What is 20/2?",
+    answers: {
+      a: "3",
+      b: "5",
+      c: "10",
+    },
+    correctAnswer: "c",
   },
   {
-    question: "What does DOM stand for?",
-    correctAnswer: "Document Object Model",
-    answers: [
-      "Dominance Option Language",
-      "Document Object Model",
-      "Document Obedience Modem",
-    ],
+    question: "What is 3/3?",
+    answers: {
+      a: "3",
+      b: "5",
+      c: "1",
+    },
+    correctAnswer: "c",
   },
 ];
 
@@ -50,7 +50,7 @@ var startButtonEl = document.querySelector("#start-button");
 var quizBox = document.querySelector("#quiz-box");
 
 var timer;
-var time = 60;
+var time = 15;
 
 var setTime = document.querySelector("#timer");
 

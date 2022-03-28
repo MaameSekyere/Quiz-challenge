@@ -12,11 +12,10 @@ HTML, CSS, Javascript/ Web APIs
 
 In the infobox, there are some rules of the quiz and a button labeled “Start”. When you clicked on the start button, the info box will be hidden but the Quiz Box appears.
 
-In the Quiz Box, there are questions and a timer which starts decrement from 60 to 0 sec. If the user completes quiz between 60 to 0 sec, the timer will be stopped and all available options will be disabled.
+In the Quiz Box, there are questions and a timer which starts decrement from 15 to 0 sec. If the user completes quiz between 15 to 0 sec, the timer will be stopped and all available options will be disabled.
 
 There is a result button at the end of the quiz that records user scores after input of initials.
 
 ## Links
+
 https://maamesekyere.github.io/Quiz-challenge/
-
-
