@@ -47,10 +47,11 @@ var resultsContainer = document.getElementById("results");
 var submitButton = document.getElementById("submit");
 var informationBox = document.querySelector(".Information-Box");
 var startButtonEl = document.querySelector("#start-button");
-var quizBox = document.getElementById("#quiz-box");
+var quizBox = document.querySelector("#quiz-box");
 
 var timer;
 var time = 60;
+
 var setTime = document.querySelector("#timer");
 
 setTime.textContent = "Time Left: " + time;
@@ -148,15 +149,17 @@ function generateQuiz(
   submitButton.onclick = function () {
     showResults(questions, quizContainer, resultsContainer);
 
-    localStorage.setItem("myQuestions", JSON.stringify(resultsContainer));
+    localStorage.setItem("myQuestions", JSON.stringify(showResults));
   };
 }
 
 function startQuiz() {
   informationBox.style.display = "none";
+  quizBox.style.display = "block";
 
   timer = setInterval(tickDown, 1000);
 }
+
 function tickDown() {
   time--;
   setTime.textContent = "Time Left: " + time;
@@ -167,11 +170,5 @@ function tickDown() {
 
 function endQuiz() {
   clearInterval(timer);
-  //hide everything
-  //show setHighscore page
-  //set Highscore page is going to have a input for a user to enter their name
-  //A submit button to store it into local storage
-  // Once they click submit, it will send them to the highscore page
 }
 startButtonEl.onclick = startQuiz;
-
