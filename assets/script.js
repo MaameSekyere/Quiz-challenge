@@ -47,7 +47,7 @@ var resultsContainer = document.getElementById("results");
 var submitButton = document.getElementById("submit");
 var informationBox = document.querySelector(".Information-Box");
 var startButtonEl = document.querySelector("#start-button");
-var quizBox = document.querySelector("#quiz-box");
+var quizBox = document.getElementById("#quiz-box");
 
 var timer;
 var time = 60;
@@ -133,7 +133,7 @@ function generateQuiz(
       // if answer is wrong or blank
       else {
         // color the answers red
-        answerContainers[i].style.color = "black";
+        answerContainers[i].style.color = "red";
       }
     }
 
@@ -147,19 +147,16 @@ function generateQuiz(
   // on submit, show results
   submitButton.onclick = function () {
     showResults(questions, quizContainer, resultsContainer);
+
+    localStorage.setItem("myQuestions", JSON.stringify(resultsContainer));
   };
 }
 
 function startQuiz() {
-  // Loop through questions
   informationBox.style.display = "none";
-
-  //resultBox.style.display = "none";
-  //highscoreEl.style.display = "none";
 
   timer = setInterval(tickDown, 1000);
 }
-
 function tickDown() {
   time--;
   setTime.textContent = "Time Left: " + time;
@@ -177,3 +174,4 @@ function endQuiz() {
   // Once they click submit, it will send them to the highscore page
 }
 startButtonEl.onclick = startQuiz;
+
