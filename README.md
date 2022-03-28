@@ -17,3 +17,4 @@ In the Quiz Box, there are questions and a timer which starts decrement from 60 
 There is a result button at the end of the quiz that records user scores after input of initials.
 
 ## Links
+https://maamesekyere.github.io/Quiz-challenge/
